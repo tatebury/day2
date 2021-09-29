@@ -1,0 +1,129 @@
+body {background-color: rgb(134, 134, 158);}
+.container {
+    background-color: rgb(0, 0, 0);
+    display: grid;
+    grid-template-columns: [first] 100% [end];
+    grid-template-rows: [start] 4% [header-hero] 675px [hero-content] auto [content-footer] 30% [end];
+    max-width: 1200px;
+    margin: auto;
+}
+
+#header {
+    background-color: rgb(0, 0, 0);
+    margin: 0px;
+}
+#header li {
+    /* float: right; */
+    float:right;
+    padding-right: 75px;
+    padding-top: 10px;
+    list-style-type: none;
+}
+#header li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    
+}
+#header h2 {
+    float: left;
+    color: white;
+    padding-left: 30px;
+    width: 300px;
+}
+#header ul {
+    padding-bottom: 200px;
+}
+
+
+
+#hero {
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+}
+.heroimage {
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("griotimages/heroimage.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.herotext {
+    color: white;
+    font-size: 32px;
+    text-align:center;
+    vertical-align: middle;
+    padding-top: 25%;
+}
+
+
+
+#content {
+    background-color: white;
+    height: 750px;
+    padding: 20px 12%;
+    grid-template-columns: [start] 30% [img-text] auto [text-button] 300px [end];
+}
+#content #date {
+    background-color: lightgrey;
+    padding: 5px 20px;
+    border-style: solid;
+    border-width: 0px 1px 1px 1px;
+    border-color: black;
+}
+#content ul {
+    
+    list-style-type: none;
+}
+#content img {
+    grid-column-start: 1;
+    grid-column-end: span 1;
+    max-width: 175px;
+}
+#content .blocks .listtext {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    float: right;
+}
+#content .blocks button {
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 20px;
+    cursor: pointer;
+    background-color: red;
+}
+
+
+
+#footer {
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    background-color: black;
+    margin: 100px;
+}
+#footer ul {
+    float: right;
+    margin-right: 50px;
+}
+#footer ul li a{
+    color: white;
+    text-decoration: none;
+}
+#footer ul li {
+    
+    padding-top: 30px;
+}
+#footer ul h2 {
+    color: white;
+    margin-top: 0px;
+}
+#footer img {
+    margin: 0px;
+    max-width: 250px;
+    float: left;
+}
