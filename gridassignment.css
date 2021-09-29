@@ -1,0 +1,52 @@
+.container {
+    display: grid;
+    grid-template-columns: [first] auto [item1-2] 25% [item2-3] 25% [item3-4] auto [end];
+    width: 100%;
+    
+}
+
+li {
+    list-style-type: none;
+}
+
+ul img{
+    max-width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgrey;
+}
+
+#item1, #item2, #item3, #item4 {
+    margin-top: 20%;
+}
+
+#item1 img{
+    grid-column-start: 1;
+}
+#item2 img{
+    grid-column-start: 2;
+}
+#item3 img{
+    grid-column-start: 3;
+}
+#item4 img{
+    grid-column-start: 4;
+
+}
+
+ul .amazon {
+    padding: 40px 0px 35px 0px;
+}
+ul .apple {
+    padding: 0px;
+}
+ul .adidas {
+    padding: 40px 0px 9px 0px;
+}
+ul .beats {
+    padding: 0px;
+    
+}
